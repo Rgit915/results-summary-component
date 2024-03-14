@@ -16,9 +16,9 @@
   <main>
     <div class="container">
       <div class="result">
-        <h5> Your Result</h5>
+        <h3> Your Result</h3>
         <div class="circle">
-          <h1>76 <small>of 100</small></h1>
+          <h1><span>76</span> <small>of 100</small></h1>
         </div>
 
         <h3>Great</h3>
@@ -28,38 +28,41 @@
 
       <div class="summary">
         <h3>Summary</h3>
-        <ul>
-          <li>
-            <div class="reaction">
-              <img src="./assets/images/icon-reaction.svg" alt="icon-reaction">
-              <p>Reaction</p>
-              <span>80/100</span>
-            </div>
-          </li>
-          <li>
-            <div class="memory">
-              <img src="./assets/images/icon-memory.svg" alt="icon-memory">
-              <p>Memory</p>
-              <span>92/100</span>
-            </div>
-          </li>
-          <li>
-            <div class="verbal">
-              <img src="./assets/images/icon-verbal.svg" alt="icon-verbal">
-              <p>Verbal</p>
-              <span>61/100</span>
-            </div>
-          </li>
-          <li>
-            <div class="visual">
-              <img src="./assets/images/icon-visual.svg" alt="icon-visual">
-              <p>Visual</p>
-              <span>72/100</span>
-            </div>
-          </li>
-        </ul>
+
+        <div class="summary-list reaction">
+          <div class="category">
+            <img src="./assets/images/icon-reaction.svg" alt="icon-reaction">
+            <h3>Reaction</h3>
+          </div>
+          <p class="score"><span class="bold-score">80</span> / 100</p>
+        </div>
+
+        <div class="summary-list memory">
+          <div class="category">
+            <img src="./assets/images/icon-memory.svg" alt="icon-memory">
+            <h3>Memory</h3>
+          </div>
+          <p class="score"><span class="bold-score">92</span> / 100</p>
+        </div>
+
+        <div class="summary-list verbal">
+          <div class="category">
+            <img src="./assets/images/icon-verbal.svg" alt="icon-verbal">
+            <h3>Verbal</h3>
+          </div>
+          <p class="score"><span class="bold-score">61</span> / 100</p>
+        </div>
+
+        <div class="summary-list visual">
+          <div class="category">
+            <img src="./assets/images/icon-visual.svg" alt="icon-visual">
+            <h3>Visual</h3>
+          </div>
+          <p class="score"><span class="bold-score">72</span> / 100</p>
+        </div>
+        <button type="button" class="button">Continue</button>
+
       </div>
-      <button type="button" >Continue</button>
     </div>
   </main>
 
