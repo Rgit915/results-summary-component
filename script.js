@@ -42,3 +42,8 @@ const populateSections = async () => {
     console.error('Error populating sections:', error);
   }
 };
+
+// Call the function to populate sections when the document is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  populateSections();
+});
