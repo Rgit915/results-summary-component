@@ -11,3 +11,34 @@ const fetchData = async (url) => {
     throw error; // Rethrow the error to handle it at the caller's level
   }
 };
+
+// Async function to populate result section and summary section
+const populateSections = async () => {
+  try {
+    const data = await fetchData('./data.json'); // Fetch data from data.json file
+
+    // Populate result section
+    const sumOfScore = data.reduce((acc, current) => {
+      return acc + current.score;
+    }, 0);
+    const result = Math.round(sumOfScore / data.length);
+    document.querySelector('#result-score').textContent = result;
+
+    // Populate summary section
+    const summarySection = document.querySelector('#summary-section');
+    data.forEach(item => {
+      const summaryList = document.createElement('div');
+      summaryList.classList.add('summary-list', item.category.toLowerCase());
+      summaryList.innerHTML = `
+        <div class="category">
+          <img src="${item.icon}" alt="icon-${item.category.toLowerCase()}">
+          <h3>${item.category}</h3>
+        </div>
+        <p class="score"><span class="bold-score">${item.score}</span> / 100</p>
+      `;
+      summarySection.appendChild(summaryList);
+    });
+  } catch (error) {
+    console.error('Error populating sections:', error);
+  }
+};
