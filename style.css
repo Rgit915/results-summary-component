@@ -93,7 +93,7 @@ body {
 
 .result h3 {
   color: var(--white);
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 1.3rem;
 }
@@ -103,7 +103,7 @@ body {
   font-size: 1rem;
   line-height: 1.2rem;
   font-weight: 500;
-  padding: 0px 2rem;
+  padding: 0px 2.7rem 0px 2rem;
 }
 .summary {
   display: flex;
@@ -183,6 +183,7 @@ body {
     display: flex;
     box-shadow: 0.5rem 1rem 3rem var(--box-shadow-color);
     border-radius: var(--border-radius);
+    margin: 1rem;
   }
 
   .result {
@@ -192,14 +193,29 @@ body {
     border-radius: var(--border-radius);
     padding: var(--padding);
   }
+  .result h3 {
+    font-size: 1.3rem;
+  }
   .result .circle {
     width: 200px;
     height: 200px;
     border-radius: 50%;
   }
+  .result p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px 1rem 0px 0px;
+  }
   .summary {
     flex: 1;
     padding: var(--padding);
+  }
+  .summary h3 {
+    font-size: 1.3rem;
+  }
+  .summary .score {
+    font-size: 1.3rem;
   }
   .summary-list {
     margin: 1rem 0px;
