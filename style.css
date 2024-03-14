@@ -6,10 +6,10 @@
 }
 
 :root {
-  --light-red: hsl(0, 100%, 67%);
-  --orangey-yellow: hsl(39, 100%, 56%);
-  --green-teal: hsl(166, 100%, 37%);
-  --cobalt-blue: hsl(234, 85%, 45%);
+  --light-red: hsla(0, 100%, 67%, 1);
+  --orangey-yellow: hsla(39, 100%, 56%, 1);
+  --green-teal: hsla(166, 100%, 37%, 1);
+  --cobalt-blue: hsla(234, 85%, 45%, 1);
   --light-slate-blue: hsl(252, 100%, 67%); /* background */
   --light-royal-blue: hsl(241, 81%, 54%); /* background */
   --violet-blue: hsla(256, 72%, 46%, 1); /* circle */
@@ -21,6 +21,7 @@
   --dark-navy: hsla(223, 30%, 27%, 0.5);
   --dark-navy-100: hsla(223, 30%, 27%, 1);
   --dark-gray-blue-100: hsla(224, 30%, 27%, 0.2);
+  --box-shadow-color: hsla(224, 82%, 58%, 0.15);
   --fw-black: hsla(0, 0%, 0%, 0.7);
   --base-font-size: 18px;
   --accent-1: hsla(0, 100%, 67%, 0.1);
@@ -112,7 +113,7 @@ body {
 }
 .summary h3 {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   margin: 1rem;
 }
 .summary-list {
