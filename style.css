@@ -174,7 +174,37 @@ body {
     var(--light-slate-blue)
   );
 }
+/* Media Query for screen sizes 600px and above */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: var(--pale-blue);
+  }
+  .container {
+    display: flex;
+    box-shadow: 0.5rem 1rem 3rem var(--box-shadow-color);
+    border-radius: var(--border-radius);
+  }
 
+  .result {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+  }
+  .result .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .summary {
+    flex: 1;
+    padding: var(--padding);
+  }
+  .summary-list {
+    margin: 1rem 0px;
+  }
+}
 
 .attribution {
   font-size: 0.6rem;
