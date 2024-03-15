@@ -14,7 +14,7 @@
   --light-royal-blue: hsl(241, 81%, 54%); /* background */
   --violet-blue: hsla(256, 72%, 46%, 1); /* circle */
   --persian-blue: hsla(241, 72%, 46%, 0); /* circle */
-  --white: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 100%, 1);
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsla(241, 100%, 89%, 1);
   --dark-gray-blue: hsl(224, 30%, 27%);
@@ -96,6 +96,10 @@ body {
   font-size: 1rem;
   font-weight: 700;
   margin-top: 1.3rem;
+}
+.result h2{
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 .result p {
   margin: 1rem;
@@ -200,6 +204,9 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+  }
+  .result h2{
+    font-size: 1.8rem;
   }
   .result p {
     font-size: 1rem;
